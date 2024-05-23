@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'HindSiliguriSB';
+	src: url('../Aset/font/Hind_Siliguri/HindSiliguri-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HindSiliguriR';
+    src: url('../Aset/font/Hind_Siliguri/HindSiliguri-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HindSiliguriB';
+    src: url('../Aset/font/Hind_Siliguri/HindSiliguri-Bold.woff') format('woff');
+}
+
+* {
+    font-family: 'HindSiliguriR', 'sans-serif';
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+.kiri-layar {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../Aset/img/bg-wisatawan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.kanan-layar {
+    width: 30%;
+    padding: 30px;
+    margin: auto 0;
+}
+
+.right-box p.h4 {
+    margin-bottom: 20px;
+    font-family: 'HindSiliguriSB', 'sans-serif';
+}
+
+.acc-mt-10 {
+    margin-top: 10px;
+}
+
+.right-box p.h6 {
+    margin: 20px 0 0;
+    font-family: 'HindSiliguriB', 'sans-serif';
+}
+
+label span {
+    color: rgb(255, 136, 0);
+}
+
+button.btn {
+    padding: 8px;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: #4fc1ff;
+    color:azure;
+    border: none;
+    transition: 0.5s;
+}
+
+button.btn:hover {
+    background-color: #80d9ff;
+    transform: scale(1.03);
+    color:azure;
+    border: none;
+}
+
+button.btn:active {
+    background-color: #0097e3 !important;
+    border: none;
+    color: white !important;
+}
+
+@media(max-width: 992px) {
+    .kiri-layar {
+        display: none;
+    }
+
+    .kanan-layar {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
