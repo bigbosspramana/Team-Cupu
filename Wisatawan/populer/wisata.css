@@ -138,18 +138,100 @@ footer {
   max-width: 500px;
 }
 
-.navbar {
-	box-shadow: 0 0 10px 0 rgba(162, 162, 162, 0.526);
-	position: relative;
-	z-index: 1000;
-	margin: 0 auto;
-	width: 100%;
-	padding: 14px 10px;
-	background-color: #46c3dc;
-}
-
 .hr-kawaii {
   width: 80%; /* Atur panjang sesuai keinginanmu */
   border: 2px solid #ffffff; /* Warna pink yang kawaii */
   margin: 20px auto; /* Biar berada di tengah */
+}
+
+.clickable-text {
+  cursor: pointer; /* Change cursor to pointer (clickable hand) */
+}
+
+button.navbar-toggler {
+	border: none;
+}
+
+button.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+button.navbar-toggler i {
+	color: white;
+}
+
+.navbar {
+	box-shadow: 0 0 10px 0 rgba(162, 162, 162, 0.526);
+	position: relative;
+	top: 15px;
+	z-index: 1000;
+	margin: 0 auto;
+	width: 98%;
+	padding: 14px 10px;
+	border-radius: 8px;
+	background-color: #46c3dc;
+}
+
+.container-fluid .navbar-brand {
+	color: white;
+}
+
+.container-fluid a {
+	color: white;
+	border-radius: 20px;
+	margin-right: 0;
+	transition: 1s;
+}
+
+.container-fluid a:hover {
+	color: black;
+	animation: buttonNav 1s both;
+	margin-right: 10px;
+}
+
+.container-fluid .navbar-brand p {
+	font-family: 'DancingScriptB', 'sans-serif';
+	margin: auto 10px;
+}
+
+.collapse .sukasukasaya {
+	display: flex;
+}
+
+.container-fluid .collapse .foto-profile {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	background-color: #5c5c5d;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
+.foto-profile i {
+	font-size: 22px;
+	margin: auto;
+	border-radius: 20px;
+	color: #b6b6b6;
+}
+
+@keyframes buttonNav {
+	from {
+		background-color: #EAF4F4;
+		border-radius: 20px;
+	}
+
+	to {
+		background-color: #EAF4F4;
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 992px){
+	/* .container-fluid .collapse .foto-profile {
+		margin-left: 10px;
+	} */
+
+	.container-fluid a {
+		padding: 8px;
+	}
 }
