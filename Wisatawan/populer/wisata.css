@@ -91,10 +91,8 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-}
-
-.card-body {
-  background-color: #f8f9fa;
+  margin-top:38px;
+  max-width: 760px;
 }
 
 .card-title {
@@ -122,4 +120,36 @@ footer {
 
 .collapse .sukasukasaya {
 	display: flex;
+}
+
+.tags{
+  font-size: small;
+  border-radius: 4000px;
+  text-align: center;
+  padding: 3px;
+  margin: 2px;
+  width: 70px;
+}
+
+.elemen-jalan-jalan{
+  border-radius: 24px;
+  background-color: #2898d3;
+  height: 54px;
+  max-width: 500px;
+}
+
+.navbar {
+	box-shadow: 0 0 10px 0 rgba(162, 162, 162, 0.526);
+	position: relative;
+	z-index: 1000;
+	margin: 0 auto;
+	width: 100%;
+	padding: 14px 10px;
+	background-color: #46c3dc;
+}
+
+.hr-kawaii {
+  width: 80%; /* Atur panjang sesuai keinginanmu */
+  border: 2px solid #ffffff; /* Warna pink yang kawaii */
+  margin: 20px auto; /* Biar berada di tengah */
 }
